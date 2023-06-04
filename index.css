@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+    /* box-sizing: ; */
+    /* box-sizing:border-box; */
+}
+html{
+    font-size: calc(100vw/640px);
+    margin: 0 auto;
+    
+}
+
+img{
+
+    width: 100%;
+    /* height: 100%; */
+    vertical-align: middle;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.content{
+    width: 100%;
+    height: 800px;
+    background: url(./images/背景1.jpg) no-repeat center;
+    /* padding: 20px red; */
+    
+    overflow: auto;
+    position: relative;
+}
+
+.inner{
+    position: absolute;
+    /* display: flex; */
+    /* flex-flow: row ; */
+    justify-content: space-between;
+    top:150px;
+    width: 100%;
+    height: 350px;
+    
+    /* background-color: blueviolet; */
+}
+.inner1_btn{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 20%;
+    width: 7rem;
+    height: 2rem;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    background: linear-gradient(       
+        45deg,       
+        #f9d9e7,        
+        #ff1493    
+    );    
+    clip-path: polygon(        
+        15px 0,        
+        calc(100% - .6rem) 0,        
+        100% 15px,        
+        100% calc(100% -.6rem),       
+        calc(100% - .6rem) 100%,        
+        15px 100%,        
+        0 calc(100% - .6remx),        
+        0 15px    
+    );
+
+}
+
+
+.inner1_wenzi{
+    background: linear-gradient(       
+        45deg,       
+        #f9d9e7,        
+        #ff1493    
+    );
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    width: 14rem;
+    height: 3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    text-align: center;
+    border: 1rem;
+    border-radius: 30%;
+    font-size: .1rem;
+    
+    left: 0rem;
+    right: 5rem;
+    top: 3rem;
+    margin: 0 auto;
+}
+
+.inner1_text{
+ 
+    transform: rotate(-10deg);
+    width: 4rem;
+    position: absolute;
+    left: 0;
+    right: 11.3rem;
+    top:13rem;
+    margin: 0 auto;
+    font-size: .5rem;
+    border: #d82222 .1rem inset;
+    border-radius: 10%;
+
+}
+
+
+.inner2{
+    width: 100%;
+    height: 4rem;
+    background-color:rgba(000,0);
+    /* background-color: #d82222; */
+    position: absolute;
+    font-size: 2.5rem;
+    top:55%;
+    left:10%;
+    opacity: 0.5;
+    font-size: 4rem;
+    
+    /* transform : translateY(-50%); */
+
+}
+a .ri-arrow-right-up-fill{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+
+.ri-skip-down-line{
+    position: absolute;
+    font-size: 4rem;
+    left: 50%;
+    /* right: 1rem;
+text-align: center; */
+    bottom: 8rem;
+    color: #d82222;
+    
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page2</title>
+    <link rel="stylesheet" href="./fonts/remixicon.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="icon" href="./favicon.ico" />
+    <style>
+.content{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: url(./images/背景3_xiaowo.jpg) no-repeat center;
+    /* padding: 20px red; */
+    
+    overflow: auto;
+    position: relative;
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+}
+.click{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateX(150%);
+    /* background-color: red; */
+}
+.say{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 12rem;
+    height: 5.4rem;
+    /* font-weight: bold; */
+    color: white;
+    padding: .2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 .1rem white;
+
+}
+.inner{
+    position: absolute;
+    background: linear-gradient(45deg, #04e6fb, #5ae98c); 
+    width: 17rem;
+    height: 30rem;
+    border-radius: 3%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:9rem;
+    /* background-color: rgb(125, 208, 228); */
+}
+
+table {
+        margin:0 auto;
+        width:60%;
+        border:2px solid #aaa;
+        border-collapse:collapse;
+        
+      }
+      table th, table td {
+        border:2px solid #aaa;
+        padding:5px;
+      }
+
+.biaoge{
+      
+    width: 16rem;
+    height: 25rem;
+    overflow: auto;
+}
+.ri-delete-bin-2-fill{
+    font-size: 2rem;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+			
+</script>
+</head>
+<body>
+    <div class="content">
+        <div class="title">
+            小沃解忧
+        </div>
+        <div class="click" onclick="fn()">
+
+        </div>
+        <div class="say" hidden>
+            hi,我是小沃，这里是小沃解忧，如果你有下面的烦恼，请点击后面对应的垃圾桶图标查看解决方案.
+        </div>
+        <!-- 烦恼列表 -->
+        <div class="inner">
+            <div class="tab1">
+                <h4 align="center">点击烦恼对应的垃圾桶查看解决方案</h4>
+            </div>
+            <div class="biaoge">
+                <table>
+                    <caption>小沃解忧</caption>
+                    <!-- <thead>xiaowo1</thead> -->
+                    <tr>
+                        <th></th>
+                        <th>烦恼</th>
+                        <th>查看解决方案</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="td2">网速慢</td>
+                        <td align="center">
+                            <a href="./xioawo2.html">
+                                <i class="ri-delete-bin-2-fill"></i>
+                            </a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>信号差</td>
+                        <td align="center">
+                            <a href="./xioawo2.html">
+                                <i class="ri-delete-bin-2-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>网络覆盖范围小</td>
+                        <td align="center">
+                            <a href="./xioawo2.html">   
+                                <i class="ri-delete-bin-2-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>流量不够用</td>
+                        <td align="center">
+                            <a href="./xioawo2.html">
+                                <i class="ri-delete-bin-2-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>数据传输慢</td>
+                        <td align="center">
+                            <a href="./xioawo2.html">
+                                <i class="ri-delete-bin-2-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>打游戏有延迟</td>
+                        <td align="center">
+                            <a href="./xioawo2.html">
+                                <i class="ri-delete-bin-2-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>其他烦恼</td>
+                        <td align="center">
+                            <a href="./xioawo2.html">
+                                <i class="ri-delete-bin-2-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+                   
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function fn(){
+            const xiaowo = document.getElementsByClassName("say")[0];
+            xiaowo.removeAttribute("hidden");
+
+        }
+        
+
+
+    </script>
+</body>
+</html>

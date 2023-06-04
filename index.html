@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+<link rel="stylesheet" href="./fonts/remixicon.css">
+<link rel="icon" href="./favicon.ico" />
+<link rel="stylesheet" href="./index.css">
+
+
+</head>
+<body>
+<div class="content">
+    
+    <div class="inner">
+
+        <button  class="inner1_btn" onclick="show()">
+            查看小之的烦恼
+        </button>
+        <div class="inner1_wenzi" hidden >
+            怎么办啊，网速好差怎么学啊, 不想挂科 T_T
+        </div>
+
+        <div class="inner1_text" hidden>
+            <!-- 网络故障 -->
+            <div class="wangluo">
+                <i class="ri-signal-wifi-error-line">网络故障</i>
+            </div>
+        </div>
+        
+    </div>
+
+        <!-- 点击鼠标 -->
+        <a href="./page2_index.html">
+            <div class="inner2"  hidden>         
+                    <!-- <i class="ri-arrow-right-up-fill"></i> -->
+
+            </div>
+        </a>
+
+    <!-- 下一页 -->
+    <div  class="next" hidden>
+        <!-- <a href="./page2_.html"> -->
+            
+            <i id="shanshuo" class="ri-skip-down-line" onclick="next()" ></i>
+        <!-- </a>  -->
+    </div>
+</div>
+    
+<script>
+    function show(){
+        let t= document.getElementsByClassName("inner1_wenzi")[0];
+        let t2 = document.getElementsByClassName("inner1_text")[0];
+        let t3 = document.getElementsByClassName("next")[0];
+       
+        t.removeAttribute("hidden");
+        t2.removeAttribute("hidden");
+        t3.removeAttribute("hidden");
+        
+    }
+    function next(){
+        let n= document.getElementsByClassName("content")[0];
+        // n.setAttribute("background","url(./images/beijing2.jpg) no-repeat center")
+        n.style.background="url(./images/背景2.jpg) no-repeat center"
+        let n2 =  document.getElementsByClassName("inner1_btn")[0]
+        console.log(1)
+        n2.style.display='none'
+        let n3 = document.getElementsByClassName("inner1_text")[0];
+        n3.removeAttribute("hidden");
+        let n4 = document.getElementsByClassName("next")[0];
+        n4.setAttribute("hidden","");
+        let text= document.getElementsByClassName("inner1_wenzi")[0];
+        text.innerHTML = '"网络出现问题了" 怎么办 点击鼠标看看'
+        text.removeAttribute("hidden");
+        let inner2= document.getElementsByClassName("inner2")[0];   
+        inner2.removeAttribute("hidden");
+
+    }
+        //闪烁
+        function changeColor(){
+        var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray";
+        color=color.split("|");
+        document.getElementById("shanshuo").style.color=color[parseInt(Math.random() * color.length)];
+        }
+
+        setInterval("changeColor()",500);
+</script>
+</body>
+</html>

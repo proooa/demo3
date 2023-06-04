@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page2</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="icon" href="./favicon.ico" />
+<style>
+.content{
+    width: 100%;
+    height: 800px;
+    background: url(./images/wangluo.jpg) no-repeat center;
+    /* padding: 20px red; */
+    
+    overflow: auto;
+    position: relative;
+}
+
+
+.btn{
+    position: absolute;
+    width: 100%;
+    height: 6rem;
+    top: 19rem;
+    bottom: 0;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn_1,.btn_2{
+    /* width: 4rem; */
+    height: 2rem;
+    color: gray;
+    padding: 0 .3rem;
+    
+
+    
+}
+.btn_1{
+    background: linear-gradient(45deg, #04e6fb, #65ff9a);    
+
+}
+.btn_2{
+    color: red;
+
+    background: linear-gradient(45deg, #04e6fb, #65ff9a);    
+    clip-path: polygon(        
+        0 0,        
+        1rem 50%,       
+        0 100%,        
+        calc(100% - 1rem) 100%,        
+        100% 50%,        
+        calc(100% - 1rem) 0    
+    );
+
+}
+</style>
+
+
+</head>
+
+
+
+<body>
+    <div class="content">
+        <!-- page2_index -->
+    
+        <div class="btn">
+   
+            <button class="btn_1" onclick="window.open('./index.html')">返回首页</button>
+            <a href="./xiaowo1.html">
+                <button class="btn_2" >&nbsp;&nbsp;&nbsp;寻求小沃帮助&nbsp;</button>
+            </a>
+        </div>
+
+    </div>
+    
+</body>
+</html>
